@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scarnesdice.MainActivity">
+
+
+    <TextView
+        android:id="@+id/YourScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="45dp"
+        android:textSize="17sp"/>
+        <!--android:text="Your Score: " />-->
+
+    <TextView
+        android:id="@+id/ComputerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/YourScore"
+        android:layout_marginStart="55dp"
+        android:layout_toEndOf="@+id/YourScore"
+        android:textSize="17sp"/>
+        <!--android:text="Computer Score:  " -->
+
+    <ImageView
+        android:id="@+id/Dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YourScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/dice1" />
+
+    <Button
+        android:id="@+id/Hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Hold" />
+
+    <Button
+        android:id="@+id/Roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Hold"
+        android:layout_alignBottom="@+id/Hold"
+        android:layout_marginStart="50dp"
+        android:text="Roll" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Hold"
+        android:layout_alignBottom="@+id/Hold"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Dice"
+        android:layout_toEndOf="@+id/YourScore"
+        android:layout_marginStart="10dp"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/turnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/scoreView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:padding="25dp"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/turnScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/turnView"
+        android:layout_below="@+id/scoreView"
+        android:layout_marginTop="45dp"
+        android:text=" " />
+
+</RelativeLayout>
